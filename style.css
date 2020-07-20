@@ -102,3 +102,40 @@ box-shadow:1px 2px 1px black;
 background-color: gray;
 
 }
+
+@media(max-width: 649px){
+  .column-container {
+    display: flex;
+    flex-direction: column;
+    min-width: auto;
+    width:calc(100% - .5rem);
+    height:calc(100vh - .5rem);
+  }
+
+  .column{
+    width: inherit;
+    height: fit-content;
+  }
+  .container.left {
+    width: inherit;
+    height: fit-content;
+
+  }
+
+  #big_coffee {
+    user-select: none;
+    font-size: 64px;
+    cursor: pointer;
+  }
+
+  .counter-container {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .cps-container {
+    font-size: 15px;
+  }
+
+
+}
